@@ -2,18 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_designs/Home/UI_1/widgets/switch_widget.dart';
 
 class InformationList extends StatelessWidget {
   InformationList({super.key});
 
   List<IconData> icons = [
-    Icons.share,
-    Icons.language,
-    Icons.whatsapp,
-    Icons.lock,
-    Icons.star,
-    Icons.logout
+    Icons.share_outlined,
+    Icons.language_outlined,
+    Icons.whatsapp_outlined,
+    Icons.lock_outline,
+    Icons.star_outline,
+    Icons.logout_outlined
   ];
 
   List<String> info = [
@@ -36,7 +37,8 @@ class InformationList extends StatelessWidget {
       itemCount: info.length,
       itemBuilder: (context, index) {
         return ListTile(
-          title: Text(info[index]),
+          title: Text(info[index],
+          style: GoogleFonts.poppins()),
           leading: Icon(icons[index]),
           trailing: icontailing(index),
         );

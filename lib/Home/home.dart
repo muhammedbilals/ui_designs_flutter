@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:ui_designs/Home/UI_1/screens/UI_home.dart';
+import 'package:ui_designs/Home/UI_2/screens/manage_store.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
-  List<String> items = ['UI 1', 'UI 2'];
-
+  List<String> items = [
+    'UI 1',
+    'UI 2',
+  ];
+  List<Widget> UItitle = [
+    UiHome(),ManageStore(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +29,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder:(context) => UiHome(), 
+                  builder: (context) => UItitle[index],
                 ),
               );
             },
