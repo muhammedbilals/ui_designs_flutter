@@ -30,14 +30,33 @@ class _ManageStoreState extends State<ManageStore> {
           Row(
             children: [
               CardWidget(
-                  title: 'Marketing Designs', passicon: Icons.volume_down_alt),
+                  title: 'Marketing Designs',
+                  passicon: Icons.volume_down_alt,
+                  color: Colors.orange),
               CardWidget(
                 title: 'Online Payments',
                 passicon: Icons.currency_rupee_outlined,
+                color: Colors.green,
               ),
             ],
           ),
-         
+          Row(
+            children: [
+              CardWidget(title: 'Discount Coupons', passicon: Icons.paid,color: Colors.yellow,),
+              CardWidget(title: 'My Costomers', passicon: Icons.people ,color: Colors.green,),
+            ],
+          ),
+          Row(
+            children: [
+              CardWidget(title: 'Store QR Code', passicon: Icons.qr_code,color: Colors.grey,),
+              CardWidget(title: 'Extra Charges', passicon: Icons.money,color: Colors.indigo,),
+            ],
+          ),
+          Row(
+            children: [
+              CardWidget(title: ' Order From', passicon: Icons.list,color: Colors.purple,),
+            ],
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
