@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:ui_designs/Home/UI_1/screens/UI_home.dart';
 import 'package:ui_designs/Home/UI_2/screens/manage_store.dart';
+import 'package:ui_designs/Home/UI_3/screens/premium_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -10,9 +11,10 @@ class HomeScreen extends StatelessWidget {
   List<String> items = [
     'UI 1',
     'UI 2',
+    'UI 3'
   ];
   List<Widget> UItitle = [
-    UiHome(),ManageStore(),
+    UiHome(),ManageStore(),PremiumScreen()
   ];
   @override
   Widget build(BuildContext context) {
