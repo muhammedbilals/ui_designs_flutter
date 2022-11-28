@@ -10,11 +10,11 @@ class CardWidget extends StatelessWidget {
 
   final IconData passicon;
   final String title;
-  final Color  color;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.only(top: 10),
       child: Card(
         child: SizedBox(
           child: Column(
@@ -24,10 +24,14 @@ class CardWidget extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Container(
-                    color: color,
+                    decoration: BoxDecoration(color: color,
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    
                     height: 50,
                     width: 50,
-                    child: Icon(passicon),
+                    child: Icon(passicon,
+                    ),
                   ),
                 ),
               ),
@@ -37,9 +41,7 @@ class CardWidget extends StatelessWidget {
                   alignment: Alignment.bottomLeft,
                   child: Text(
                     title,
-                    style: TextStyle(
-                      fontSize: 25,
-                    ),
+                    style: GoogleFonts.poppins(fontSize: 20),
                   ),
                 ),
               )

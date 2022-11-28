@@ -28,6 +28,7 @@ class _ManageStoreState extends State<ManageStore> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CardWidget(
                   title: 'Marketing Designs',
@@ -41,21 +42,27 @@ class _ManageStoreState extends State<ManageStore> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CardWidget(title: 'Discount Coupons', passicon: Icons.paid,color: Colors.yellow,),
               CardWidget(title: 'My Costomers', passicon: Icons.people ,color: Colors.green,),
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CardWidget(title: 'Store QR Code', passicon: Icons.qr_code,color: Colors.grey,),
               CardWidget(title: 'Extra Charges', passicon: Icons.money,color: Colors.indigo,),
             ],
           ),
-          Row(
-            children: [
-              CardWidget(title: ' Order From', passicon: Icons.list,color: Colors.purple,),
-            ],
+          Padding(
+            padding: const EdgeInsets.all(9.0),
+            child: Row(
+              
+              children: [
+                CardWidget(title: ' Order From', passicon: Icons.list,color: Colors.purple,),
+              ],
+            ),
           ),
         ],
       ),
