@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FeaturesList extends StatelessWidget {
   FeaturesList({super.key});
@@ -32,8 +33,8 @@ class FeaturesList extends StatelessWidget {
       itemCount: featureTitle.length,
       itemBuilder: (context, index) {
         return ListTile(
-          title: Text(featureTitle[index]),
-          subtitle: Text(featureSubtitle[index]),
+          title: Text(featureTitle[index],style: GoogleFonts.poppins(),),
+          subtitle: Text(featureSubtitle[index],style: GoogleFonts.poppins(),),
           leading: Image.asset(featureIcon[index]),
           
         );
