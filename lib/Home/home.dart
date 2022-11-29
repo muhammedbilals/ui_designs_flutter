@@ -5,18 +5,21 @@ import 'package:ui_designs/Home/UI_1/screens/UI_home.dart';
 import 'package:ui_designs/Home/UI_2/screens/manage_store.dart';
 import 'package:ui_designs/Home/UI_3/screens/premium_screen.dart';
 import 'package:ui_designs/Home/UI_4/screens/payments_home.dart';
+import 'package:ui_designs/Home/UI_5/widgets/catalog_home.dart';
+import 'package:ui_designs/Home/UI_5/screens/navigator_catalogue.dart';
+import 'package:ui_designs/Home/UI_6/screens/orders_home.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
-  List<String> items = [
-    'UI 1',
-    'UI 2',
-    'UI 3',
-    'UI 4'
-  ];
+  List<String> items = ['UI 1', 'UI 2', 'UI 3', 'UI 4', 'UI 5','UI 6'];
   List<Widget> UItitle = [
-    UiHome(),ManageStore(),PremiumScreen(),PaymentHome(),
+    UiHome(),
+    ManageStore(),
+    PremiumScreen(),
+    PaymentHome(),
+    ScreenProducts(),
+    OrderHome()
   ];
   @override
   Widget build(BuildContext context) {

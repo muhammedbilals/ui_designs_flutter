@@ -128,7 +128,7 @@ class PaymentList extends StatelessWidget {
     '₹1599.25 deposited to 58850200000138',
     '₹599.25 deposited to: 58860200000136',
     '₹2297 deposited to: 58860200000138',
-     '₹1722.75 deposited to 58560200000138',
+    '₹1722.75 deposited to 58560200000138',
     '₹884.17 deposited to 58860200000138',
     '₹1599.25 deposited to 58850200000138',
     '₹599.25 deposited to: 58860200000136',
