@@ -31,15 +31,17 @@ class PaymentHome extends StatelessWidget {
           ],
         )),
       ),
-      body: Column(
-        children: [
-          PaymentCard(),
-          PaymentOverview(),
-          PaymentTwoCard(),
-          PaymentTransactionWidget(),
-          PaymentTransaction(),
-          PaymentList(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            PaymentCard(),
+            PaymentOverview(),
+            PaymentTwoCard(),
+            PaymentTransactionWidget(),
+            PaymentTransaction(),
+            PaymentList(),
+          ],
+        ),
       ),
       
     );
