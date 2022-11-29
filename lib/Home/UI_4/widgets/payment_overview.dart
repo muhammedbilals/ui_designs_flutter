@@ -68,8 +68,19 @@ class PaymentOverview extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Payment Overview',style: GoogleFonts.poppins(fontSize:20 ),),
-                   Text('Life time',style: GoogleFonts.poppins(fontSize:20 ,color: Colors.black.withOpacity(0.5)),),
+                  Text(
+                    'Payment Overview',
+                    style: GoogleFonts.poppins(fontSize: 17),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 140),
+                    child: Text(
+                      'Life time',
+                      style: GoogleFonts.poppins(
+                          fontSize: 17, color: Colors.black.withOpacity(0.5)),
+                    ),
+                  ),
+                  Icon(Icons.keyboard_arrow_down_outlined),
                 ],
               )
             ],

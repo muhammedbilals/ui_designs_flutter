@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
     'UI 4'
   ];
   List<Widget> UItitle = [
-    UiHome(),ManageStore(),PremiumScreen(),PaymentHome()
+    UiHome(),ManageStore(),PremiumScreen(),PaymentHome(),
   ];
   @override
   Widget build(BuildContext context) {

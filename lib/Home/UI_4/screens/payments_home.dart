@@ -3,7 +3,11 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_designs/Home/UI_4/widgets/payment_card.dart';
+import 'package:ui_designs/Home/UI_4/widgets/payment_list_widget.dart';
 import 'package:ui_designs/Home/UI_4/widgets/payment_overview.dart';
+import 'package:ui_designs/Home/UI_4/widgets/payment_transactions.dart';
+import 'package:ui_designs/Home/UI_4/widgets/payment_two_card.dart';
+import 'package:ui_designs/Home/UI_4/widgets/transations_text.dart';
 
 class PaymentHome extends StatelessWidget {
   const PaymentHome({super.key});
@@ -30,7 +34,11 @@ class PaymentHome extends StatelessWidget {
       body: Column(
         children: [
           PaymentCard(),
-          PaymentOverview()
+          PaymentOverview(),
+          PaymentTwoCard(),
+          PaymentTransactionWidget(),
+          PaymentTransaction(),
+          PaymentList(),
         ],
       ),
       
