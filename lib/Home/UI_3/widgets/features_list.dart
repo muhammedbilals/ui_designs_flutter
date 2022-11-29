@@ -35,7 +35,9 @@ class FeaturesList extends StatelessWidget {
           title: Text(featureTitle[index]),
           subtitle: Text(featureSubtitle[index]),
           leading: Image.asset(featureIcon[index]),
+          
         );
+        
       },
     );
   }

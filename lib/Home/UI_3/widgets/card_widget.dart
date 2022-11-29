@@ -50,7 +50,7 @@ class PremiumCard extends StatelessWidget {
             ],
           ),
         ),
-        color: Colors.amber,
+        
       ),
     );
   }

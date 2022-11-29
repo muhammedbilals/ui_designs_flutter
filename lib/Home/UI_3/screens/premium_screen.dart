@@ -4,6 +4,11 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_designs/Home/UI_3/widgets/features_list.dart';
 import 'package:ui_designs/Home/UI_3/widgets/features_title.dart';
+import 'package:ui_designs/Home/UI_3/widgets/final_buttons.dart';
+import 'package:ui_designs/Home/UI_3/widgets/final_buttons_2.dart';
+import 'package:ui_designs/Home/UI_3/widgets/premium_expanded.dart';
+import 'package:ui_designs/Home/UI_3/widgets/premium_need_help.dart';
+import 'package:ui_designs/Home/UI_3/widgets/premium_yt.dart';
 
 import '../widgets/card_widget.dart';
 
@@ -30,6 +35,11 @@ class PremiumScreen extends StatelessWidget {
             PremiumCard(),
             FeaturesText(),
             FeaturesList(),
+            PremiumYt(),
+            MyStatefulWidget(),
+            PremiumButtons(),
+            PremiumHelp(),
+            ButtonLast()
           ],
         ),
       ),
